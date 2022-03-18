@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css " />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Carter+One&family=Margarine&family=Mochiy+Pop+P+One&family=Nova+Oval&family=Paytone+One&family=Permanent+Marker&family=Poppins:wght@400;500;600;700;800;900&family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
     <title>Learning Bootstrap and Sass</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar logo </a>
         <button
@@ -54,6 +59,149 @@
         </div>
       </div>
     </nav>
+    <!-- INTRO_SECTION -->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row mt-lg-5">
+          <div class="col-md-6 intro">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hy!, I'm Immanuel</span>
+              <span class="display-2--description lh-base"
+                >This web Page was built using Bootstrap v5 and Sass (this is
+                where the description about yourself will go)</span
+              >
+            </h1>
+            <button type="button" class="btn-rounded rounded-pill">
+              Getting in Touch
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+          <!-- Start the cnntent -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <img src="assets/images/img.svg" alt="" class="img-fluid" />
+              <a
+                href=""
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+              >
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span
+                  class="border-animation border-animation--border-1"
+                ></span>
+                <span
+                  class="border-animation border-animation--border-2"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L40,101.3C80,107,160,117,240,133.3C320,149,400,171,480,154.7C560,139,640,85,720,74.7C800,64,880,96,960,117.3C1040,139,1120,149,1200,165.3C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- companies section -->
+
+    <section id="companies" class="companies">
+      <div class="container">
+        <div class="row text-center">
+          <h3 class="fw-bold display-6 mb-3">Trusted by companies like</h3>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+
+      <!-- company content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="assets/images/companies/campany-1.png"
+                alt="company 1 logo"
+                title="company 1 log0"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="assets/images/companies/campany-2.png"
+                alt="company 2 logo"
+                title="company 2 log0"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="assets/images/companies/campany-3.png"
+                alt="company 3 logo"
+                title="company 3 log0"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="assets/images/companies/campany-4.png"
+                alt="company 4 logo"
+                title="company 4 log0"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="assets/images/companies/campany-5.png"
+                alt="company 5 logo"
+                title="company 5 log0"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="companies__logo-box shadow-sm">
+              <img
+                src="assets/images/companies/campany-6.png"
+                alt="company 6 logo"
+                title="company 6 log0"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4  Servives -->
+
+    <section id="services" class="our-services">
+      <div class="container mt-5">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Our services</h1>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/assets/vendors/js/glightbox.min.js "></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        href: "https://youtu.be/axRAL0BXNvw",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+      });
+    </script>
     <script src="/assets/bootstrap/js/bootstrap.bundle.js "></script>
   </body>
 </html>

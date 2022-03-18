@@ -8,6 +8,7 @@
   padding: 0.9375rem 4.375rem 0.9375rem 1.2rem;
   font-weight: 700;
   margin: 0;
+  color: black;
   border: 0.1rem solid rgba($white, 0.6);
   background-color: white;
   span {
@@ -21,7 +22,7 @@
     border-radius: 50%;
 
     i {
-      color: $white;
+      color: black;
       font-size: 1rem;
       line-height: 2.5rem;
     }
@@ -32,6 +33,11 @@
 
     span {
       background-color: rgba($black, 0.6);
+
+      background-color: white;
+      i {
+        color: black;
+      }
     }
   }
 }
