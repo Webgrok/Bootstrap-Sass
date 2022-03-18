@@ -30,7 +30,7 @@
 .heading-line::before {
   content: "";
   width: 10rem;
-  height: 0.1rem;
+  height: 0.2rem;
   display: block;
   margin: auto;
   background: $primary;
@@ -49,4 +49,23 @@
 
 .display-3 {
   font-family: "Poppins", sans-serif;
+  &--title {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.border-right {
+  border-right: 0.2rem solid $gray-600;
+  height: 100%;
 }
