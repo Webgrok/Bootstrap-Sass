@@ -11248,9 +11248,13 @@ textarea.form-control-lg {
   padding: 0 0.7rem;
 }
 .menu li a {
-  color: lightgrey !important;
+  color: #bebaba !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+.menu li a:hover {
+  color: white !important;
+  font-weight: 900 !important;
 }
 
 .companies {

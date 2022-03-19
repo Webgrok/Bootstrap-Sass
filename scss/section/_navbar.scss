@@ -7,9 +7,14 @@
   li {
     padding: 0 0.7rem;
     a {
-      color: lightgrey !important;
+      color: rgb(190, 186, 186) !important;
       text-transform: capitalize;
       font-weight: 600;
+
+      &:hover {
+        color: white !important;
+        font-weight: 900 !important;
+      }
     }
   }
 }
